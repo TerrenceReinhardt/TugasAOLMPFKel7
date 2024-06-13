@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Haverbrooke";
+    src: url("Fonts/Haverbrooke/HaverbrookeHollow-rgZ7K.ttf");
+}
+
+@font-face {
+    font-family: HaverBrookeNonHollow;
+    src: url(./Fonts/Haverbrooke/Haverbrooke-MVeav.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0 0 0 0;
+}
+
+#HomeButton {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #151515;
+    padding: 8px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin: 0 0 0 0;
+    flex-grow: 1;
+    color: white;
+}
+
+.NavbarLinks ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarLinks li {
+    list-style: none;
+}
+
+.NavbarLinks li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+    display: block;
+    padding: 0rem 3rem;
+}
+
+.NavbarLinks li a:hover {
+    opacity: 1.0;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+.ToggleButton {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+
+.ToggleButton .Bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#MainSection {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 82vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+footer {
+    margin: 0 0;
+}
+
+#TextFlexbox {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+
+.Container {
+    font-family: "Roboto";
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: 0 2%;
+}
+
+.MainUserInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Divider {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 15%;
+    height: auto;
+}
+
+.Divider label, input {
+    display: block;
+}
+
+.UserInputBox {
+    margin: 4% 0%;
+}
+
+#Message {
+    font-family: "Roboto";
+    font-size: 100;
+}
+
+.GenderDetailBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1% 20%;
+}
+
+.GenderDivider{
+    display: flex;
+    margin: 0 2%;
+}
+
+.GenderCategory {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#ExtraOption {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#ExtraOption label,input {
+    display: block;
+}
+
+#DOB {
+    text-align: center;
+    margin: 0 2%;
+}
+
+#RegionFlex {
+    margin: 0 2%;
+}
+
+#AgreementFlex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 6vh;
+    width: auto;
+}
+
+.SubmitButton {
+    position: relative;
+    bottom: 0%;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin-top: 1%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#SubmitButton {
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.ErrorM {
+    font-size: 0.7rem;
+}
+
+@media (max-width: 800px) {
+    .ToggleButton {
+        display: flex;
+    }
+
+    .NavbarLinks {
+        display: none;
+        width: 100%;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .NavbarLinks ul {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .NavbarLinks li {
+        text-align: center;
+    }
+
+    .NavbarLinks li a {
+        padding: 0.3rem 1rem;
+    }
+
+    .NavbarLinks.active {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 541px) {
+
+    .MainUserInfo {
+        padding-right: 80%;
+        flex-direction: column;
+        text-align: left;
+        place-items: left;
+    }
+}
+
+@media (max-width: 394px) {
+    .MainUserInfo { 
+        padding-right: 120%;
+    }
+
+    .SubmitButton {
+        margin-top: 6%;
+    }
+}

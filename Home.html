@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <script src="./javascript/HomeScript.js" defer></script>
+    <title>Perfumane</title>
+</head>
+<body>
+    <div class="Navbar">
+        <a href="./Home.html" id="HomeButton">
+            <img src="./Images/PERFUMANE (2).png" alt="HomeLogo">
+        </a>
+        <nav class="NavbarItems">
+            <a href="#" class="ToggleButton">
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+            </a>
+            <div class="NavbarLinks">
+                <ul>
+                    <li>
+                        <a href="./Products.html" id="ProductsButton">Products</a>
+                    </li>
+                    <li>
+                        <a href="./Locations.html" id="LocationButton">Outlets</a>
+                    </li>
+                    <li>
+                        <a href="./AboutUs.html" id="AboutUsButton">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./ContactUs.html" id="ContactUsButton">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="MainSection">
+        <video class="VideoInsert" id="MainVideo" muted autoplay="autoplay" loop>
+            <source src="./video/PerfumaneBanner.mp4" type="video/mp4">
+        </video>
+        <div id="TextSection">
+            <h1 id="BrandName">Perfumane</h1>
+            <div id="TextWrapperA">
+                <p class="AddedText">Exclusive Collections</p>
+                <p class="AddedText">From All Over The World</p>
+                <p class="AddedText">Luxurious Perfumes</p>
+            </div>
+            <div id="BrandsWrapper">
+                <ul id="BrandList">
+                    <li>
+                        <a href="./Products.html" id="ChanelButton">
+                            <img src="./images/Chanel_logo.png" alt="ChanelPerfume" id="ChanelPerfumeSymbol">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./Products.html" id="TomFordButton">
+                            <img src="./images/Tom-Ford-Logo.png" alt="TomFordPerfume" id="TomFordPerfumeSymbol">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./Products.html" id="VersaceButton">
+                            <img src="./images/Versace_logo.png" alt="VersacePerfume" id="VersacePerfumeSymbol">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./Products.html" id="GuessButton">
+                            <img src="./images/guess-logo.png" alt="GuessPerfume" id="GuessPerfumeSymbol">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="MuteContainer">
+            <button id="MuteButton">
+                <img src="./images/Speaker.png" alt="MuteUnmute" id="MuteImage">
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div id="LineWrapper">
+            <hr id="FooterLine">
+        </div>
+        <div id="TextFlexbox">
+            <div id="TextLeft">
+                <p>
+                    @2024 Perfumane. All Rights Reserved 
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

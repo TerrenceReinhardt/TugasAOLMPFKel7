@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Haverbrooke";
+    src: url("Fonts/Haverbrooke/HaverbrookeHollow-rgZ7K.ttf");
+}
+
+@font-face {
+    font-family: HaverBrookeNonHollow;
+    src: url(./Fonts/Haverbrooke/Haverbrooke-MVeav.ttf);
+}
+
+@font-face {
+    font-family: "Bradley";
+    src: url(./Fonts/Bradley/Bradley\ Gratis.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0 0 0 0;
+}
+
+#HomeButton {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #151515;
+    padding: 8px;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin: 0 0 0 0;
+    flex-grow: 1;
+    color: white;
+}
+
+.NavbarLinks ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarLinks li {
+    list-style: none;
+}
+
+.NavbarLinks li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+    display: block;
+    padding: 0rem 3rem;
+}
+
+.NavbarLinks li a:hover {
+    opacity: 1.0;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+.ToggleButton {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+
+.ToggleButton .Bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#MainSection {
+    display: flex;
+    position: relative;
+    height: 82vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+footer {
+    margin: 0 0;
+}
+
+#TextFlexbox {
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+
+#TextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-family: "Roboto";
+    font-weight: 100;
+    text-align: center;
+    margin: auto 2%;
+}
+
+.DescriptionText {
+    color: white;
+}
+
+#MainImage {
+    width: 100%;
+    height: auto;
+}
+
+#ImageContainer {
+    width: 50vw;
+    margin: auto 0;
+}
+
+#LogoText {
+    font-family: "Bradley";
+    color: white;
+    margin: 0.3% auto;
+    font-size: 5rem;
+}
+
+@media (max-width: 1000px) {
+    #MainSection {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #ImageContainer {
+        width: 100vw;
+        margin: auto 0;
+    }
+
+    #MainImage {
+        width: 80%;
+        height: auto;
+    }
+
+    #TextContainer {
+        width: 100vw;
+        margin: 0;
+        padding: 2%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .ToggleButton {
+        display: flex;
+    }
+
+    .NavbarLinks {
+        display: none;
+        width: 100%;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .NavbarLinks ul {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .NavbarLinks li {
+        text-align: center;
+    }
+
+    .NavbarLinks li a {
+        padding: 0.3rem 1rem;
+    }
+
+    .NavbarLinks.active {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #MainImage {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 540px) {
+    #MainImage {
+        width: 70%;
+        height: auto;
+    }
+
+    .DescriptionText {
+        font-size: 0.7rem;
+    }
+
+    #LogoText {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 414px) {
+    #MainImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .DescriptionText {
+        font-size: 0.8rem;
+    }
+
+    #LogoText {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 376px) {
+    #MainImage {
+        width: 70%;
+        height: auto;
+    }
+
+    .DescriptionText {
+        font-size: 0.7rem;
+    }
+
+    #LogoText {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contactUs.css">
+    <script src="./javascript/ContactUsScript.js" defer></script>
+    <title>Perfumane</title>
+</head>
+<body>
+    <div class="Navbar">
+        <a href="./Home.html" id="HomeButton">
+            <img src="./images/PERFUMANE (2).png" alt="HomeLogo">
+        </a>
+
+        <nav class="NavbarItems"></nav>
+            <a href="#" class="ToggleButton">
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+            </a>
+
+            <div class="NavbarLinks">
+                <ul>
+                    <li>
+                        <a href="./Products.html" id="ProductsButton">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./Locations.html" id="LocationsButton">Locations</a>
+                    </li>
+
+                    <li>
+                        <a href="./AboutUs.html" id="AboutUsButton">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="./ContactUs.html" id="ContactUsButton">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="MainSection">
+        <div class="Container">
+
+            <form id="MainForm" action="/">
+                <div class="MainUserInfo">
+                    <div class="Divider">
+                        <div class="UserInputBox">
+                            <label for="FullName">Full Name</label>
+                            <input type="text" id="FullName" name="FullName" placeholder="Enter full name"/>
+                            <div class="ErrorM" id="NameError"></div>
+                        </div>
+
+                        <div class="UserInputBox">
+                            <label for="EmailId">Email</label>
+                            <input type="text" id="EmailId" name="EmailId" placeholder="Enter email"/>
+                            <div class="ErrorM" id="EmailError"></div>
+                        </div>
+
+                        <div class="UserInputBox">
+                            <label for="Message">Message</label>
+                            <textarea id="Message" name="Message" rows="4" cols="50" placeholder="Enter message"></textarea>
+                            <div class="ErrorM" id="MessageError"></div>
+                        </div>
+                    </div>
+
+                    <div class="Divider">
+                        <div class="UserInputBox">
+                            <label for="Age">Age</label>
+                            <input type="text" id="Age" name="Age" placeholder="Enter age"/>
+                            <div class="ErrorM" id="AgeError"></div>
+                        </div>
+
+                        <div class="UserInputBox">
+                            <label for="Adress">Adress</label>
+                            <input type="text" id="Adress" name="Adress" placeholder="Enter Adress"/>
+                            <div class="ErrorM" id="AdressError"></div>
+                        </div>
+
+                        <div class="UserInputBox">
+                            <label for="PhoneNumber">Phone Number</label>
+                            <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number"/>
+                            <div class="ErrorM" id="PhoneError"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="GenderDetailBox">
+                    <span class="GenderTitle">Gender</span>
+                    <div class="GenderCategory">
+                        <div class="GenderDivider">
+                            <input type="radio" name="Gender" id="Male" value="Male">
+                            <label for="Male">Male</label>
+                        </div>
+
+                        <div class="GenderDivider">
+                            <input type="radio" name="Gender" id="Female" value="Female">
+                            <label for="Female">Female</label>
+                        </div>
+                    </div>
+                    <div class="ErrorM" id="GenderError"></div>
+                </div>
+
+                <div id="ExtraOption">
+                    <div id="DOB">
+                        <label for="DateOfBirth">Date of birth</label>
+                        <input type="date" id="DateOfBirth" name="DateOfBirth">
+                        <div class="ErrorM" id="DOBError"></div>
+                    </div>
+
+                    <div id="RegionFlex">
+                        <label for="RegionId">Country Region</label>
+                        <select name="RegionId" id="RegionId" form="MainForm">
+                            <option value="SelectRegion">Select Region</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Asia-Pacific">Asia Pacific</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Middle-East">Middle East</option>
+                            <option value="North-America">North America</option>
+                            <option value="South-America">South America</option>
+                        </select>
+                        <div class="ErrorM" id="RegionError"></div>
+                    </div>
+                </div>
+                
+                <div id="AgreementFlex">
+                    <div class="ErrorM" id="AgreeError"></div>
+                    <input type="checkbox" id="Agreement" name="Agreement">
+                    <label for="Agreement">By clicking the checkbox you agree to receive a copy of our message</label>
+                </div>
+
+                <div class="SubmitButton">
+                    <button type="submit" id="SubmitButton">Send</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div id="LineWrapper">
+            <hr id="FooterLine">
+        </div>
+
+        <div id="TextFlexbox">
+            <div id="TextLeft">
+                <p>
+                    @2024 Perfumane. All Rights Reserved 
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
